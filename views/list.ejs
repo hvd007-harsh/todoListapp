@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>TODO LIST</title>
+</head>
+
+<body>
+    <h1>It's a <%= TITLE %> </h1>
+    <h2><%= DateOfToday %></h2>
+    <div class="container">
+
+        <% ListItem.forEach(ListItems => { %>
+        <li>
+            <form id="formD" action="/delete" method="post">
+                <input type="checkbox" name="check" value="<%= ListItems._id %>" onclick= submit()>
+                <h4 name="item">
+                    <%= ListItems.item  %>
+                </h4>
+                <input type="hidden" name="listName"  value="<%= TITLE %>" >
+            </form>
+        </li>
+
+        <% });%>
+
+        <form action="/" method="post">
+            <label for="TEXT">TEXT</label>
+            <input type="text" name="Activity" placeholder="New Item">
+            <input type="submit" name="button" value=<%= TITLE %>>
+        </form>
+    </div>
+</body>
+
+</html>

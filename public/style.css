@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    top:0;
+    left:0;
+}
+body{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg,#F900BF 50%,#FFFFFF 50%);
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+
+}
+h1,h2{
+ background-color: black;
+ color: white;
+ text-align: center;
+ margin: auto;
+ padding: 5px;
+}
+input:checked+h4{
+    text-decoration: line-through;
+    text-decoration-color: #F900BF;
+}
+input[type="checkbox"]{
+    text-decoration: line-through;
+
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    padding: 5px;
+}
+.container{
+    justify-content: center;
+    border: 2px solid #E4E9FD;
+    line-height: 2px;
+    align-self: center;
+    text-align: center;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: 20px;
+    padding: 5px;
+}
